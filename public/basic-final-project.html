@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Final Project</title>
+		<style>
+			.container {
+				margin: 30px auto;
+				max-width: 50%;
+				background-color: rgb(100, 100, 145);
+				border-radius: 10px;
+				padding: 30px;
+			}
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 40%;
+				border-radius: 5px;
+				padding: 15px;
+			}
+			.title {
+				border: 1px solid white;
+				padding: 20px;
+				text-align: center;
+				color: white;
+				border-radius: 5px;
+			}
+			.sub-title {
+				font-size: 15px;
+				color: white;
+				text-align: center;
+			}
+			.content {
+				color: white;
+				font-size: 15px;
+			}
+			.link {
+				text-decoration: underline;
+				color: rgb(0, 0, 9);
+			}
+			button {
+				display: block;
+				margin: 0 auto;
+				gap: 20px;
+				padding: 20px;
+				border: none;
+				background-color: black;
+				color: white;
+				border-radius: 5px;
+				width: 50%;
+			}
+			div {
+				margin-bottom: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">I Love Coding</h1>
+			<h2 class="sub-title">Javascript is My Favourite Language</h2>
+			<hr />
+			<img
+				src="https://media.istockphoto.com/id/1451456915/photo/female-freelance-developer-coding-and-programming-coding-on-two-with-screens-with-code.jpg?s=612x612&w=is&k=20&c=9lSvYBkjqOy3wZ4oGSVCTp2b6Nc6MR914dsNkJi6bLs="
+				alt=""
+			/>
+			<hr />
+			<p class="content">
+				I love coding. It's not just a hobby or a skill; it's a
+				captivating journey that fuels my passion for problem-solving
+				and creativity. As I sit in front of my computer, surrounded by
+				lines of code, I feel a sense of excitement and fulfillment that
+				is hard to put into words. Coding is my way of bringing ideas to
+				life, of creating something meaningful and functional from
+				scratch. It's a unique form of expression where each line of
+				code is a stroke on the canvas of digital innovation. The thrill
+				of seeing a program run seamlessly, the satisfaction of solving
+				a complex problem—these are the moments that make coding so
+				exhilarating.
+			</p>
+			<div>
+				<a
+					href="https://www.linkedin.com/in/joy-smart"
+					class="link"
+					target="_blank"
+					>Connect with me on LinkedIn</a
+				>
+			</div>
+			<button class="btn">LEARN CODING</button>
+		</div>
+		<script>
+			function learnCoding() {
+				let fullName = prompt('What is your full name?');
+				let email = prompt('What is your email');
+				let answer = prompt('Do you want to learn coding?');
+				if ((fullName && email) !== null && answer === 'yes') {
+					alert(
+						'Great decision!, we will get in touch by mail but, for the main time visit shecodes foundation to learn coding for free'
+					);
+				} else {
+					alert('Thank you for your response');
+				}
+			}
+
+			let btn = document.querySelector('.btn');
+			btn.addEventListener('click', learnCoding);
+		</script>
+	</body>
+</html>
